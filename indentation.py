@@ -10,8 +10,10 @@ def main():
     total=0
     for num in numbers_list:
         total += num
-    print("Current total:",total)
+        print("Current total:",total)
     return total
  
     
-main()
+#The code below runs whatever is in main()
+if __name__ == '__main__':
+    main()
