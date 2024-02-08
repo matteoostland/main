@@ -34,4 +34,31 @@ def falling1D(h,v0=0):
     return time,velo
 
 def projectile(v0, angle, h):
-    return angle
+    
+    
+    return time, rang
+
+
+
+
+
+
+
+def something(time, route, yeet):
+    '''
+    
+
+    Parameters
+    ----------
+    time : TYPE
+        DESCRIPTION.
+    route : TYPE
+        DESCRIPTION.
+    yeet : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
