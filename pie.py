@@ -71,7 +71,7 @@ def piestimator(num_points = 1000):
         
         plt.draw()
         plt.pause(0.01)
-    
-    plt.ioff()  # Turn off interactive mode after the loop
+    # Turn off interactive mode after the loop
+    plt.ioff()  
     plt.show()
     return pi_estimate
