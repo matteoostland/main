@@ -37,14 +37,14 @@ def schedule(names):
 
 
 
-solo = ['Brycen', 'Juan', 'Luisa', 'Gaby', 'Matthew', 'Jacob', 'Zhihui', 'Colin', 'Tanishka', 'Ethan', 'Scott', 'Payton', 'Kevin', 'Zachary', 'Aidan', 'Andreas', 'Volkan', 'Greyson']
-groups = [['Hayley', 'Ruby'],['Lucas', 'Luis', 'Max'],['Ellis', 'Mia'],['Henry', 'Howard', 'Jeremy'],['Grace', 'Shayna', 'Haven']]
+solo = ['Brycen', 'Juan', 'Luisa', 'Gaby', 'Colin', 'Tanishka', 'Ethan', 'Payton', 'Kevin', 'Zachary', 'Aidan', 'Andreas', 'Greyson']
+groups = [['Hayley', 'Ruby'],['Lucas', 'Luis', 'Max'],['Ellis', 'Mia'],['Henry', 'Howard', 'Jeremy'],['Grace', 'Shayna', 'Haven'],['Scott', 'Volkan']]
 
-group_pairs(solo)
-group_pairs(groups)
+# group_pairs(solo)
+# group_pairs(groups)
 
 #form schedule
-# groups = flatten_list(groups)
-# slist = schedule(solo+groups)
-# with open('FinalSchedule.dat','w') as writefile:
-#     writefile.write(js.dumps(slist))
+groups = flatten_list(groups)
+slist = schedule(solo+groups)
+with open('FinalSchedule.dat','w') as writefile:
+    writefile.write(js.dumps(slist))
