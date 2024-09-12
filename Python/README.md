@@ -1,2 +1,2 @@
 # main
-Contains a public base of programs for Phys1211
+Contains python programs for Phys1211
