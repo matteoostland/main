@@ -4,8 +4,10 @@ Created on Tue Sep 10 12:14:36 2024
 
 @author: tomke
 """
-k=100
-tot=0
-for j in range(k):
-    tot += 4*(-1)**j * 1/(2*j+1)
+import numpy as np
+k=100000
+numbers = np.array(range(k))
+series = (-1)**numbers/(2*numbers+1)
+
+tot = 4*sum(series)
 print(tot)
