@@ -9,7 +9,7 @@ Created on Wed Sep 18 07:44:21 2024
 
 
 import numpy as np
-orbitMinutes = np.array([94, 4*60, 6*60, 773])
+orbitMinutes = np.array([94., 4*60., 6*60., 773.])
 
 T = orbitMinutes*60
 G = 6.67430*10**-11
