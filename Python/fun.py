@@ -28,6 +28,7 @@ def rising1D(v0,g=9.8):
 
 def falling1D(h,v0=0):
     # returns the time and velocity of an object falling from h and at an initial velocity v0
+    # convention v0>0 is downward velocity
     g = 9.8
     #solution to quadratic equation
     time = -v0/g + mh.sqrt(v0**2/g**2+2*h/g)
@@ -35,12 +36,15 @@ def falling1D(h,v0=0):
     return time,velo
 
 def projectile(v0, angle, h):
-    # return time and range of projectile with initial v0, launch angle, and height h
-   
-    return 0
+    height, timeup = rising1D(v0)
+    timedown, vf = falling1D(height)
+    time = timeup + timedown
+    rang = v0*time
+    return vf, rang, time, height
 
 [height,timeup] = rising1D(80)
 [timedown, vf] = falling1D(height)
+print(timedown)
 
 
 

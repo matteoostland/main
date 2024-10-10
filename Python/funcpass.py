@@ -39,19 +39,21 @@ def fmany(*args):
 def fdict(**diction):
     #you will often see the input written as **kwargs in other documentation
     #diciton is a dictionary
+    #sample input: a = [1,2,3], b=[3,2,1], action='cross'
     for key, values in diction.items():
         print(key,'=', values)
+    a = np.array[diction['a']]
+    b = np.array[diction['b']]
     if diction['action'] == 'magnitude':
-        a = np.array(diction['a'])
         product = mh.sqrt(sum(pow(element,2) for element in a))
     elif diction['action']=='dot':
-        a = np.array(diction['a'])
-        b = np.array(diction['b'])
+        # dot product code
         product = np.dot(a,b)
     elif diction['action']=='cross':
-        a = np.array(diction['a'])
-        b = np.array(diction['b'])
+        # cross product section
         product = np.cross(a,b)
+    else:
+        print('Incorrect input')
     return product
         
         
