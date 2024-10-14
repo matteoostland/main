@@ -42,9 +42,10 @@ def projectile(v0, angle, h):
     rang = v0*time
     return vf, rang, time, height
 
-[height,timeup] = rising1D(80)
-[timedown, vf] = falling1D(height)
-print(timedown)
+if __name__ == '__main__':
+    [height,timeup] = rising1D(80)
+    [timedown, vf] = falling1D(height)
+    print(timedown)
 
 
 

@@ -42,16 +42,21 @@ def fdict(**diction):
     #sample input: a = [1,2,3], b=[3,2,1], action='cross'
     for key, values in diction.items():
         print(key,'=', values)
-    a = np.array[diction['a']]
-    b = np.array[diction['b']]
+    a = np.array(diction['a'])
+    
     if diction['action'] == 'magnitude':
         product = mh.sqrt(sum(pow(element,2) for element in a))
     elif diction['action']=='dot':
         # dot product code
+        b = np.array(diction['b'])
         product = np.dot(a,b)
+        
+    
     elif diction['action']=='cross':
         # cross product section
+        b = np.array(diction['b'])
         product = np.cross(a,b)
+
     else:
         print('Incorrect input')
     return product
